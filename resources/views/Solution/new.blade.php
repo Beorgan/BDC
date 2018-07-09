@@ -15,8 +15,6 @@
                                     Sujet du probleme: {{$Problems->MessagePrb}}
                                 </div>
                                 <br/>
-
-
                                 <form action="{{ URL::to('solution/enregistrer') }}" method="post" enctype="multipart/form-data" class="form-horizontal">
                                     {!! Form::hidden('Problems_id', $Problems->id) !!}
                                     <br/>
@@ -25,24 +23,16 @@
                                         {!! Form::textarea('MessageSol', null, ['class' => 'form-control', 'required' => 'required']) !!}
                                         <small class="text-danger">{{ $errors->first('MessageSol') }}</small>
                                     </div>
-
-
-
                                     <label>Ajouter un fichier:</label>
                                     <div>
                                         <input type="file" name="file" >
                                         <input type="hidden" value="{{ csrf_token() }}" name="_token">
                                     </div>
-
-
                                     <div class="btn-group pull-right">
                                         {!! Form::reset("Annuler", ['class' => 'btn btn-warning']) !!}
                                         {!! Form::submit("Enregistrer", ['class' => 'btn btn-success']) !!}
-
                                     </div>
                                 </form>
-
-
                             </div>
                         </div>
                     </div>
