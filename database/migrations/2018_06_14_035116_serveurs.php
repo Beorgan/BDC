@@ -16,11 +16,8 @@ class Serveurs extends Migration
         Schema::create('serveurs', function (Blueprint $table) {
 
             $table->increments('id');
-            $table->string ('NomServeur');
-            $table->string ('Type');
-            $table->string ('Version');
+            $table->string ('Designation');
             $table->integer ('Platformes_id');
-            $table->integer ('Type_id');
             $table->timestamps();
 
         });
