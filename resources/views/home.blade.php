@@ -1,3 +1,5 @@
+
+{{-- Interface qui renvoit vers admin ou user --}}
 @extends('layouts.app')
 @section('content')
 <div class="Background">
