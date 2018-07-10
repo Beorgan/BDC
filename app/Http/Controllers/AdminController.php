@@ -32,10 +32,7 @@ class AdminController extends Controller
      */
     public function create($id)
     {
-        $Platformes=Platformes::findOrFail($id);
-        $Serveurs=Serveurs::where('Platformes_id',$id)->get();
-
-        return view('Serveur.new',compact('Platformes','Serveurs'));
+      
 
     }
 
