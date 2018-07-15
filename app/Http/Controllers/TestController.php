@@ -4,8 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\post;
-use App\video;
-use App\taggable;
+use App\os;
+use App\app;
+use App\db;
 class TestController extends Controller
 {
     /**
@@ -15,10 +16,11 @@ class TestController extends Controller
      */
     public function index()
     {
-        $post=post::all();
-        $tags=taggable::all();
+        $app=app::all();
+        $db=db::all();
+        $os=os::all();
 
-        return view('User',compact('post','tags'));
+        return view('User',compact('app','db','os'));
 
     }
 
