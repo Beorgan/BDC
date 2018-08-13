@@ -18,6 +18,7 @@
                         @endif
                         @else Veuillez vous connecter <a href="/login" style="color: white; border-bottom-style: solid;">ici</a> ou sinon s'enregistrer <a href="/register" style="color: white; border-bottom-style: solid;">ici</a>
                         @endif
+
                     </div>
                 </div>
             </div>

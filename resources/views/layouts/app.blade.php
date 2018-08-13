@@ -10,11 +10,19 @@
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
         <script src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
+        <script src="{{ asset('js/bootstrap.js') }}" defer></script>
+        <script src="{{ asset('js/bootstrap-table.js') }}" defer></script>
         <!-- Fonts -->
         <link rel="dns-prefetch" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link href="{{ asset('assets/css/bootstrap.css') }}" rel="stylesheet">
+        <link href="{{ asset('assets/css/fresh-bootstrap-table.css') }}" rel="stylesheet">
+
     </head>
     <body>
         <div id="app">
@@ -67,5 +75,6 @@
             </main>
         </div>
     </body>
+
     @yield('content')
 </html>

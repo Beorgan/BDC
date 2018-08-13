@@ -1,6 +1,11 @@
 {{-- Interface Admin --}}
 @extends('layouts.app')
 @section('content')
+
+    <script>import bugsnag from 'bugsnag-js'</script>
+    <script>var bugsnagClient = bugsnag('230909d7b333f19ad57508ff0c10abdd')</script>
+
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12 col-md-offset-10 ">
@@ -14,7 +19,7 @@
                 </div>
                 <div class="card-body text-dark">
                     <b>Recherche:</b>
-                    
+
                     <!--Recherche par message-->
                     <form class="ui form">
                         <div class="ui fluid action input">
